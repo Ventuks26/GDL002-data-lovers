@@ -11,121 +11,35 @@ const viewThree =document.getElementById("howToPlayView");
 const viewFour = document.getElementById("pokemonsView");
 
 function showWelcome(){
-	if (viewOne.style.display == 'none') {
 		viewOne.style.display = 'block';
-	}
-	else {
-		viewOne.style.display = 'block';
-
-	}
-
-	if (viewTwo.style.display == 'block') {
 		viewTwo.style.display = 'none';
-	}
-	else {
-		viewTwo.style.display = 'none';
-	}
-
-	if (viewThree.style.display == 'block') {
 		viewThree.style.display = 'none';
-	}
-	else {
-		viewThree.style.display = 'none';
-	}
+	  viewFour.style.display = 'none';
 
-	if (viewFour.style.display == 'block') {
-		viewFour.style.display = 'none';
-	}
-	else {
-		viewFour.style.display = 'none';
-	}
 }
 
 function showStory(){
-	if (viewOne.style.display == 'block') {
-		viewOne.style.display = 'none';
-	}
-	else {
-		viewOne.style.display = 'none';
+	viewOne.style.display = 'none';
+	viewTwo.style.display = 'block';
+	viewThree.style.display = 'none';
+	viewFour.style.display = 'none';
 
-	}
-
-	if (viewTwo.style.display == 'none') {
-		viewTwo.style.display = 'block';
-	}
-	else {
-		viewTwo.style.display = 'block';
-	}
-
-	if (viewThree.style.display == 'block') {
-		viewThree.style.display = 'none';
-	}
-	else {
-		viewThree.style.display = 'none';
-	}
-
-	if (viewFour.style.display == 'block') {
-		viewFour.style.display = 'none';
-	}
-	else {
-		viewFour.style.display = 'none';
-	}
 }
 
 function showHowToPlay(){
-	if (viewOne.style.display == 'block') {
-		viewOne.style.display = 'none';
-	}
-	else {
-		viewOne.style.display = 'none';
-	}
-	if (viewTwo.style.display == 'block') {
-		viewTwo.style.display = 'none';
-	}
-	else {
-		viewTwo.style.display = 'none';
-	}
-	if (viewThree.style.display == 'none') {
-		viewThree.style.display = 'block';
-	}
-	else {
-		viewThree.style.display = 'block';
-	}
-	if (viewFour.style.display == 'block') {
-		viewFour.style.display = 'none';
-	}
-	else {
-		viewFour.style.display = 'none';
+	viewOne.style.display = 'none';
+	viewTwo.style.display = 'none';
+	viewThree.style.display = 'block';
+	viewFour.style.display = 'none';
 
-	}
+
 }
 
 function showPokemons1(){
-	if (viewOne.style.display == 'block') {
-		viewOne.style.display = 'none';
-	}
-	else {
-		viewOne.style.display = 'none';
-	}
-	if (viewTwo.style.display == 'block') {
-		viewTwo.style.display = 'none';
-	}
-	else {
-		viewTwo.style.display = 'none';
-	}
-	if (viewThree.style.display == 'block') {
-		viewThree.style.display = 'none';
-	}
-	else {
-		viewThree.style.display = 'none';
-	}
-	if (viewFour.style.display == 'none') {
-		viewFour.style.display = 'block';
-	}
-	else {
-		viewFour.style.display = 'block';
-
-	}
+	viewOne.style.display = 'none';
+	viewTwo.style.display = 'none';
+	viewThree.style.display = 'none';
+	viewFour.style.display = 'block';
 }
 
 function pokemonIconTemplate(pokemon){
@@ -142,7 +56,7 @@ function pokemonIconTemplate(pokemon){
 			<h2>${pokemon.name} / ${pokemon.num}
 			<br>
 			Tipo: ${pokemon.type}</h2>
-			<h3>Dulce con el que evoluciona:</h3> 
+			<h3>Dulce con el que evoluciona:</h3>
 			<p>-${pokemon.candy}.</p>
 			<h3>Caramelos que necesitas para tu siguiente Evolución:</h3>
 			<p>-${pokemon.candy_count}.</p>
@@ -150,7 +64,7 @@ function pokemonIconTemplate(pokemon){
 			<p>-${pokemon.egg}.</p>
 		</div>
 	</div>
-`; 
+`;
 }
 
 function pokemonIcon (data){

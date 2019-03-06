@@ -11,7 +11,7 @@ html, body{
   font-family: 'Reenie Beanie';
   height: 100%;
   width: 100%;
-  background: #DDCBE5;
+  background:   #148FCC;
   background-size: cover;
   padding: 0;
   margin: 0;
@@ -21,7 +21,7 @@ html, body{
 
 .menu nav{
   width: 100%;
-  background: #B48DB0;
+  background:  #FFF838;
   float: left;
   border-radius: 5px;
 }
@@ -34,7 +34,7 @@ html, body{
 }
 .menu li a{
   font-size: 2em;
-  color: #fff;
+  color:  #FF001A;
   text-decoration: none;
   display: block;
   padding: 20px;
@@ -49,8 +49,9 @@ html, body{
 
 #welcomeView h4{
   font-size: 2em;
+  color : #eef7f4;
 }
-
+;
 #storyView{
   font-size: 1.5em;
   padding: 10%;
@@ -188,37 +189,6 @@ html, body{
   text-align: right;
 }
 
-/*.profile-content{
-  background-color: #D6C2C2;
-  width: 80%;
-  padding: 3% 3%;
-  margin: 3% auto;
-  position: relative;
-}
-
-#modal:target{
-opacity: 1;
-pointer-events: auto;
-z-index: 100;
-}
-
-.pokemon-detail{
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 1s;
-}
-
-.close-x p{
-  text-align: right;
-  margin: 0%;
-  color: #ffff;
-  font-size: 0.95em;
-}*/
 
 button{
   font-family: 'Reenie Beanie';
