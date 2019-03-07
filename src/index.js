@@ -1,45 +1,44 @@
 
-
 document.getElementById("welcome").addEventListener("click", showWelcome);
 document.getElementById("story").addEventListener("click", showStory);
 document.getElementById("howToPlay").addEventListener("click", showHowToPlay);
 document.getElementById("pokemons").addEventListener("click", showPokemons1);
 
-const viewOne = document.getElementById("welcomeView");
-const viewTwo = document.getElementById("storyView");
-const viewThree =document.getElementById("howToPlayView");
-const viewFour = document.getElementById("pokemonsView");
+const welcomeView = document.getElementById("welcomeView");
+const storyView = document.getElementById("storyView");
+const howToPlayView =document.getElementById("howToPlayView");
+const pokemonsView = document.getElementById("pokemonsView");
 
 function showWelcome(){
-		viewOne.style.display = 'block';
-		viewTwo.style.display = 'none';
-		viewThree.style.display = 'none';
-	  viewFour.style.display = 'none';
+		welcomeView.style.display ='block';
+		storyView.style.display ='none';
+		howToPlayView.style.display ='none';
+		pokemonsView .style.display ='none';
 
 }
 
 function showStory(){
-	viewOne.style.display = 'none';
-	viewTwo.style.display = 'block';
-	viewThree.style.display = 'none';
-	viewFour.style.display = 'none';
+	welcomeView.style.display = 'none';
+	storyView.style.display = 'block';
+	howToPlayView.style.display = 'none';
+	pokemonsView .style.display = 'none';
 
 }
 
 function showHowToPlay(){
-	viewOne.style.display = 'none';
-	viewTwo.style.display = 'none';
-	viewThree.style.display = 'block';
-	viewFour.style.display = 'none';
+	welcomeView.style.display = 'none';
+	storyView.style.display = 'none';
+	howToPlayView.style.display = 'block';
+	pokemonsView.style.display = 'none';
 
 
 }
 
 function showPokemons1(){
-	viewOne.style.display = 'none';
-	viewTwo.style.display = 'none';
-	viewThree.style.display = 'none';
-	viewFour.style.display = 'block';
+	welcomeView.style.display = 'none';
+	storyView.style.display = 'none';
+	howToPlayView.style.display = 'none';
+	pokemonsView.style.display = 'block';
 }
 
 function pokemonIconTemplate(pokemon){

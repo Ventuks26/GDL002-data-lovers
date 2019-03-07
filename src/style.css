@@ -17,6 +17,7 @@ html, body{
   margin: 0;
   top: 0;
   left: 0;
+  font-family: 'Muli', sans-serif;
 }
 
 .menu nav{
@@ -47,11 +48,6 @@ html, body{
   display: block;
 }
 
-#welcomeView h4{
-  font-size: 2em;
-  color : #eef7f4;
-}
-;
 #storyView{
   font-size: 1.5em;
   padding: 10%;
@@ -75,10 +71,9 @@ html, body{
   margin: 3% 3%;
 }
 
-#howToPlayView h4{
-  font-size: 1.9em;
+.paragraphs{
+  color:  #eef7f4;
 }
-
 
 .pokemon-go{
 }
@@ -231,6 +226,10 @@ h3{
   text-align: left;
   font-size: 0.65em;
   color: #939393;
+}
+h4{
+  color: #eef7f4;
+  font-size: 1.9em;
 }
 .contenedor{
   height: 0%;
