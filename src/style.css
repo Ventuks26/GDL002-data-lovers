@@ -91,12 +91,17 @@ html, body{
 
 #buttonsType{
   padding: 0% 3%;
+
+
 }
 
 
 #button{
   list-style: none;
   position: relative;
+  font-family: 'Muli', sans-serif;
+  color: #eef7f4
+
 }
 
 #button li{
@@ -104,7 +109,7 @@ html, body{
 }
 
 #button a{
-  color: #fff;
+  color: #eef7f4;
   text-decoration: none;
 }
 
@@ -159,11 +164,11 @@ html, body{
 
 .moda p{
   font-size: 0.85em;
-  color: #939393
+  color: #939393;
 }
 
 .icon-img{
-  width: 65px;
+  width: 100px;
 }
 
 .icon{
@@ -186,7 +191,7 @@ html, body{
 
 
 button{
-  font-family: 'Reenie Beanie';
+  font-family: 'Muli', sans-serif;
   font-size: 0.95em;
   background: none;
   border-radius: 100%;
