@@ -7,7 +7,6 @@
 }
 
 html, body{
-  font-family: 'Reenie Beanie';
   height: 100%;
   width: 100%;
   background:   #148FCC;
@@ -59,7 +58,6 @@ html, body{
 }
 
 #howToPlayView{
-  font-size: 1.5em;
   text-align: center;
   padding: 10% 10% 0% 10%;
   display: none;
@@ -73,10 +71,11 @@ html, body{
 
 .paragraphs{
   color:  #FFFDF9;
+  font-size: 2vw;
+
 }
 
-.pokemon-go{
-}
+
 
 #pokemonsView{
   text-align: center;
@@ -91,6 +90,7 @@ html, body{
 
 #buttonsType{
   padding: 0% 3%;
+  display: inline-block;
 
 
 }
@@ -114,12 +114,12 @@ html, body{
 
 .poke-box{
   text-align:center;
-  padding: 4% 5% 5% 5%;
+  padding: 2% 3% 3% 3%;
   margin: 1% 1%;
   float: left;
   background-color: #EAD8F3;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 3%;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -159,11 +159,12 @@ html, body{
  display: flex;
  flex-direction: column;
  align-items: center;
+ color: #E73D1F;
 }
 
 .moda p{
   font-size: 0.85em;
-  color: #939393;
+
 }
 
 .icon-img{
@@ -180,10 +181,12 @@ html, body{
   border: 280px;
   background-color: #FFFDF9;
   border-radius: 10px;
+
 }
 
 .icon{
   width: 150px;
+
 
 }
 
@@ -199,7 +202,7 @@ html, body{
 
 
 
-}
+
 
 button{
   font-family: 'Muli', sans-serif;
@@ -242,25 +245,43 @@ h2{
 h3{
   text-align: left;
   font-size: 0.65em;
-  color: #939393;
+  color: #E73D1F;
 }
 h4{
   color: #FFFDF9;
   font-size: 1.9em;
 }
+
 .contenedor{
   height: 0%;
   overflow: hidden;
   padding-bottom: 40%;
   padding-top: 25%;
   position: relative;
-
 }
+
+.show-type{
+  display:inline-block;
+}
+
 .contenedor img{
   height: 100%;
   left: 0%;
   position: absolute;
   top:0%;
   max-width: 100%;
+  display: inline-block;
 
 }
+
+.container-global{
+  width: 100%;
+  max-width: 1000px;
+  margin:0 auto;
+}
+
+/*.container-types{
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+}/*

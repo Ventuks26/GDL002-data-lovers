@@ -43,26 +43,28 @@ function showPokemons1(){
 
 function pokemonIconTemplate(pokemon){
 	return `
-	<div class="poke-box">
-		<div class="pokemon-name">
-			<img src="${pokemon.img}">
-			${pokemon.name}
-			<br>
-			Número de PokeDex: ${pokemon.num}
+	<section class="container-types">
+		<div class="poke-box">
+			<div class="pokemon-name">
+				<img src="${pokemon.img}">
+				${pokemon.name}
+				<br>
+				Número de PokeDex: ${pokemon.num}
+			</div>
+			<div class="detail">
+				<img src="${pokemon.img}">
+				<h2>${pokemon.name} / ${pokemon.num}
+				<br>
+				Tipo: ${pokemon.type}</h2>
+				<h3>Dulce con el que evoluciona:</h3>
+				<p>-${pokemon.candy}.</p>
+				<h3>Caramelos que necesitas para tu siguiente Evolución:</h3>
+				<p>-${pokemon.candy_count}.</p>
+				<h3>Para encontrar un Huevo de este Pókemon debes caminar:</h3>
+				<p>-${pokemon.egg}.</p>
+			</div>
 		</div>
-		<div class="detail">
-			<img src="${pokemon.img}">
-			<h2>${pokemon.name} / ${pokemon.num}
-			<br>
-			Tipo: ${pokemon.type}</h2>
-			<h3>Dulce con el que evoluciona:</h3>
-			<p>-${pokemon.candy}.</p>
-			<h3>Caramelos que necesitas para tu siguiente Evolución:</h3>
-			<p>-${pokemon.candy_count}.</p>
-			<h3>Para encontrar un Huevo de este Pókemon debes caminar:</h3>
-			<p>-${pokemon.egg}.</p>
-		</div>
-	</div>
+	</section>
 `;
 }
 
@@ -175,7 +177,7 @@ const templateModa= `
 	Venenoso: ${resultModa.Poison}</p>
 	<p><img class="icon-img" src="https://i.postimg.cc/1zN6CBph/water.png">
 		<br>
-		Agua: ${resultModa.Water}</h3>
+		Agua: ${resultModa.Water}</p>
 	<p><img class="icon-img" src="https://i.postimg.cc/MT7BxGP9/normal.png">
 	<br>
 	Normal: ${resultModa.Normal}</p>
@@ -187,7 +189,7 @@ const templateModa= `
 		Planta: ${resultModa.Grass}</p>
 	<p><img class="icon-img" src="https://i.postimg.cc/2SLVr63n/ground.png">
 		<br>
-		Tierra: ${resultModa.Ground}</h3>
+		Tierra: ${resultModa.Ground}</p>
 	<p><img class="icon-img" src="https://i.postimg.cc/8kbv0jr5/psychic.png">
 		<br>
 		Psiquico: ${resultModa.Psychic}</p>

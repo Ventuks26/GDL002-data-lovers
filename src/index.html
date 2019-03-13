@@ -6,8 +6,9 @@
     <title>Conoce Pokemon</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="body-u">
 
+  <body class="body-u">
+  <div class="container-global">
     <div id="root"></div>
 
     <div class="menu">
@@ -15,16 +16,23 @@
   <ul id="main">
     <li><a id="welcome" href="#">Inicio</a></li>
     <li><a id="story" href="#">Para saber más</a></li>
-    <li><a id="howToPlay" href="#">Guía</a></li>
+    <li><a id="howToPlay" href="#">Glosario</a></li>
     <li><a id="pokemons" href="#">Pokemones</a></li>
     <div id="marker"></div>
   </ul>
 </nav>
     </div>
 
-    <div id="welcomeView">
+    <div  id="welcomeView">
+    <section class="container-welcome">
       <h4>¡Bienvenido a Conoce Pokemon!</h4>
-      <p class= "paragraphs">En Conoce Pokemón encontrarás en "Un poco de historia" una breve reseña de la historia de Pokemón, en "Cómo jugar" una breve guía de los elementos que encontrarás en Pokemón Go y que te será útil saber si deaseas empezar a jugar, y podrás conocer algunos de los Pokemones de la región de Kanto, que son los de la primer generación (pero hay muchas, actualmente está por salir la octava generación). Los pokemones se clasifican por tipo (Agua, Fuego, Normal, Planta y más...!). Aquí podrás conocerlos filtrando por tipo, podrás ordenar alfabéticamente la lista completa de pokemones, y podrás saber cuántos y de qué tipo encontramos en la región de Kanto.</p>
+      <p class= "paragraphs">En Conoce Pokemón encontrarás en "Un poco de historia" una breve reseña de la historia de Pokemón,
+    en "Cómo jugar" una breve guía de los elementos que encontrarás en Pokemón Go y que te será útil saber si deaseas empezar a jugar,
+    y podrás conocer algunos de los Pokemones de la región de Kanto, que son los de la primer generación (pero hay muchas, actualmente está por salir la octava generación).
+    Los pokemones se clasifican por tipo (Agua, Fuego, Normal, Planta y más...!). Aquí podrás conocerlos filtrando por tipo,
+    podrás ordenar alfabéticamente la lista completa de pokemones,
+     y podrás saber cuántos y de qué tipo encontramos en la región de Kanto.</p>
+    </section>
         <div class="contenedor">
           <img src="https://i.postimg.cc/15nCyBvL/giphy.gif" alt="gif pokemon Go">
         </div>
@@ -47,12 +55,7 @@
     </div>
 
     <div id="howToPlayView">
-      <p class= "paragraphs">Para tener en cuenta... PokemonGo utiliza GPS, ya que se combina con el mundo real.
-      Las Pokeparadas y Gym hacen referencia a espacios reales.
-      De las Pokeparas puedes obtener items como Pokeballs, Huevos, Revivir, Pociones entre otras cosas.
-      En Pokemon hay tres equipos: Azul, Amarillo, Rojo. A partir de cierto nivel puedes elegir formar parte de un equipo.</p>
 
-      <p class= "paragraphs">Pokemon Go es un juego de realidad aumentada, uno de los puntos más interesantes es que a diferencia de los videojuegos que tradicionalmente jugamos en alguna consola en casa, Pokemon Go te invita a conocer tu ciudad y tus alrededores al salir en una labor de investigadora en búsqueda de los Pokemones (Poket Moster) y por qué no, de convivencia con otros entrenadores pokemon.</p>
 
       <h4>Glosario:</h4>
       <div>
@@ -212,7 +215,7 @@
       </div>
         <br>
         <br>
-      <div id="showTypes"></div>
+      <div id="showTypes" class="show-types"></div>
     </div>
 
     <div class="to-top">
@@ -225,6 +228,7 @@
       <script src="data.js"></script>
       <script src="index.js"></script>
       <!-- <script src="main.js"></script> -->
-
+      </div>
   </body>
+</div>
 </html>
